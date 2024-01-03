@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Smoke Test Suite">
+    <!-- Existing test for TestLogin and TestHomeButton -->
+<!--    <test name="Test For Login">-->
+<!--        <classes>-->
+<!--            <class name="tests.TestLogin">-->
+<!--                <methods>-->
+<!--                    <include name="verifyLogin">-->
+<!--                        <parameter name="username" value="Admin" />-->
+<!--                        <parameter name="password" value="password" />-->
+<!--                    </include>-->
+<!--                </methods>-->
+<!--            </class>-->
+<!--            <class name="tests.TestMakeAppointmentButton" >-->
+<!--                <methods>-->
+<!--                    <include name="makeAppointmentButtonTest"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+<!--            <class name="tests.TestHomeButton">-->
+<!--                <methods>-->
+<!--                    <include name="homeButtonsTest"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+<!--        </classes>-->
+<!--    </test>-->
+    <!-- Fropm above this line the xml file is correct-->
+<!--    &lt;!&ndash; test for the Make appointment button &ndash;&gt;-->
+<!--    <test name="Test for the Make appointment button">-->
+<!--        <classes>-->
+<!--            <class name="tests.TestMakeAppointmentButton" >-->
+<!--                <methods>-->
+<!--                    <include name="makeAppointmentButtonTest"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="Test for the home button tests">-->
+<!--        <classes>-->
+<!--            <class name="tests.TestHomeButton">-->
+<!--                <methods>-->
+<!--                    <include name="homeButtonsTest"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+<!--        </classes>-->
+<!--    </test>-->
+    <!-- New test for TestMakeAppointment -->
+    <test name="Test For Login">
+        <classes>
+            <class name="tests.TestMakeAppointment">
+                <methods>
+                    <include name="verifyLogin">
+                        <parameter name="username" value="John Doe" />
+                        <parameter name="password" value="ThisIsNotAPassword" />
+                        <parameter name="month" value="May" />
+                        <parameter name="year" value="2022" />
+                        <parameter name="day" value="15" />
+                        <parameter name="program" value="Medicaid"/>
+                        <parameter name="text" value="something"/>
+                        <parameter name="option" value="2"/>
+                    </include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

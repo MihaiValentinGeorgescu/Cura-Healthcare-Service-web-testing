@@ -1,0 +1,5 @@
+
+n	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(äİøªøÿÿÿÿ8Şëº¸Ì1
+v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(÷­üŸ8àëº¸Ì1
+R
+java:S1128"0Remove this unused import 'org.bson.types.Code'.(—ä—øÿÿÿÿ8èëº¸Ì1
